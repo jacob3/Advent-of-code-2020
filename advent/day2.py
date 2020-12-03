@@ -1,8 +1,9 @@
 from shared import read_puzzle_input
 
+puzzle_input = read_puzzle_input(2)
 
-def advent2_1(puzzle_input):
-    puzzle_input = read_puzzle_input(2)
+
+def advent2_1():
     correct_policies = 0
 
     for x in puzzle_input:
@@ -20,8 +21,7 @@ def advent2_1(puzzle_input):
     return f"{correct_policies} / {len(puzzle_input)}"
 
 
-def advent2_2(puzzle_input):
-    puzzle_input = read_puzzle_input(2)
+def advent2_2():
     correct_policies = 0
 
     for x in puzzle_input:
@@ -44,10 +44,9 @@ def advent2_2(puzzle_input):
 
 
 # today I'm lazy and don't want to achieve it with a onliner
-puzzle_input = read_puzzle_input(2)
 
 print("\n\n*Advent 2:*")
 print("\nPart 1:")
-print(advent2_1(puzzle_input))
+print(advent2_1())
 print("\nPart 2:")
-print(advent2_2(puzzle_input))
+print(advent2_2())
