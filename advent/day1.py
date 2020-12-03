@@ -11,7 +11,8 @@ def advent1_2(puzzle_input):
 
 puzzle_input = list(map(int, read_puzzle_input(1)))
 
-print("Part 1:")
+print("\n\n*Advent 1:*")
+print("\nPart 1:")
 print(advent1_1(puzzle_input))
 print("\nPart 2:")
 print(advent1_2(puzzle_input))

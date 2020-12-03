@@ -46,7 +46,8 @@ def advent2_2(puzzle_input):
 # today I'm lazy and don't want to achieve it with a onliner
 puzzle_input = read_puzzle_input(2)
 
-print("\nPart 1")
+print("\n\n*Advent 2:*")
+print("\nPart 1:")
 print(advent2_1(puzzle_input))
 print("\nPart 2:")
 print(advent2_2(puzzle_input))

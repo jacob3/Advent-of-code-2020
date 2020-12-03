@@ -25,7 +25,8 @@ def advent3_calc(puzzle_input, right, down):
 
 puzzle_input = read_puzzle_input(3)
 
-print("\nPart 1")
+print("\n\n*Advent 3:*")
+print("\nPart 1:")
 print(advent3_1(puzzle_input))
 print("\nPart 2:")
 print(advent3_2(puzzle_input))
