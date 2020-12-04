@@ -14,8 +14,9 @@ def advent4_1():
 
 
 def advent4_2():
-    return len([z for z in [
-        [x for x in y if
+    return len(
+        [z for z in [
+            [x for x in y if
                 (x[0] == "byr" and (len(x[1]) == 4 and 1920 <= int(x[1]) <= 2002)) or
                 (x[0] == "iyr" and (len(x[1]) == 4 and 2010 <= int(x[1]) <= 2020)) or
                 (x[0] == "eyr" and (len(x[1]) == 4 and 2020 <= int(x[1]) <= 2030)) or
@@ -24,9 +25,9 @@ def advent4_2():
                 (x[0] == "hcl" and (x[1][0] == "#" and len(x[1].split("#")[1]) == 6 and all(c in string.hexdigits for c in x[1].split("#")[1]))) or
                 (x[0] == "ecl" and (x[1] in ["amb", "blu", "brn", "gry", "grn", "hzl", "oth"])) or
                 (x[0] == "pid" and (len(x[1]) == 9 and x[1].isnumeric()))
-                ] for y in filter_required()]
-                if set(req_fields).issubset([i[0] for i in z])
-                ])
+            ] for y in filter_required()
+        ] if set(req_fields).issubset([i[0] for i in z])]
+    )
 
 
 def filter_required():
