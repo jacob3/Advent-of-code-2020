@@ -1,2 +1,2 @@
 #!/bin/bash
-for f in advent/*.py; do python3 "$f"; done
+for f in advent/day*.py; do python3 "$f"; done
