@@ -14,8 +14,13 @@ def advent6_2():
     return sum([len(functools.reduce(lambda x, y: list(set(x) & set(y)), x)) for x in [x.splitlines() for x in puzzle_input.split("\n\n")]])
 
 
+def advent6_2_improved():
+    # Thanks to Bas Jansen (@BasJansenDev) I learned star expressions, thus new solution:
+    return sum([len(set.intersection(*map(set, x.splitlines()))) for x in puzzle_input.split("\n\n")])
+
+
 print("\n\n*Advent 6:*")
 print("\nPart 1:")
 print(advent6_1())
 print("\nPart 2:")
-print(advent6_2())
+print(advent6_2_improved())
